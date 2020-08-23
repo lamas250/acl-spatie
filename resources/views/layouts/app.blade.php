@@ -55,6 +55,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a href="{{route('user.index')}}" class="dropdown-item">Gestão de Usuarios</a>
+                                    <a href="{{route('role.index')}}" class="dropdown-item">Gestão de Perfis</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
