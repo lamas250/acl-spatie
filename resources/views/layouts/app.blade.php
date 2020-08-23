@@ -58,6 +58,7 @@
                                     <a href="{{route('user.index')}}" class="dropdown-item">Gestão de Usuarios</a>
                                     <a href="{{route('role.index')}}" class="dropdown-item">Gestão de Perfis</a>
                                     <a href="{{route('permission.index')}}" class="dropdown-item">Gestão de Permissões</a>
+                                    <a href="{{route('post.index')}}" class="dropdown-item">Gestão de Posts</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
