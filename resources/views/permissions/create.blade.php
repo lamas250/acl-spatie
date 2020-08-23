@@ -9,7 +9,7 @@
 
                     <div class="card-body">
 
-                        <a class="text-success" href="{{route('role.index')}}">&leftarrow; Voltar para a listagem de Perfis</a>
+                        <a class="text-success" href="{{route('user.index')}}">&leftarrow; Voltar para a listagem de Permissões</a>
 
                         @if($errors)
                             @foreach($errors->all() as $error)
@@ -19,17 +19,16 @@
                             @endforeach
                         @endif
 
-                        <form action="{{route('role.update',['role'=>$role->id])}}" method="post" class="mt-4" autocomplete="off">
+                        <form action="{{route('permission.store')}}" method="post" class="mt-4" autocomplete="off">
                             @csrf
-                            @method('PUT')
 
                             <div class="form-group">
                                 <label for="name">Nome</label>
-                                <input type="text" class="form-control" id="name" 
-                                       name="name" value="{{ old('name') ?? $role->name }}">
+                                <input type="text" class="form-control" id="name" placeholder="Insira o Nome"
+                                       name="name" value="{{ old('name') }}">
                             </div>
 
-                            <button type="submit" class="btn btn-block btn-success">Editar Perfil</button>
+                            <button type="submit" class="btn btn-block btn-success">Cadastrar Nova Permissão</button>
                         </form>
                     </div>
 
@@ -38,4 +37,3 @@
         </div>
     </div>
 @endsection
-
